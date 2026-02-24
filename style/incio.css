@@ -50,7 +50,7 @@ nav{
 
 }
 
-.modal-container1 {
+.modal-container1, .modal-container2, .modal-container3,.modal-container4 {
     width: 100vw;
     position: fixed;
     top: 30px;
@@ -59,7 +59,7 @@ nav{
     justify-content: center;
 }
 
-.modal1 {
+.modal1, .modal2, .modal3, .modal4 {
     display: flex;
     flex-direction: column;
     padding: 30px;
@@ -72,7 +72,7 @@ nav{
     display: flex;
 }
 
-.active .modal1 {
+.active .modal1, .modal2, .modal3, .modal4 {
     animation: modal .4s;
 }
 
@@ -92,7 +92,7 @@ span {
 }
 
  @media (max-width: 500px) {
-    .modal1 {
+    .modal1, .modal2, .modal3, .modal4 {
         padding: 10px;
         width: 80%;
     }
