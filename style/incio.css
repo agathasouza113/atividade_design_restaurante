@@ -21,6 +21,11 @@ a{
     color: #F5ECC2;
 }
 
+.botao{
+    text-decoration: none;
+    color: #5D3813;
+}
+
 ul{
     list-style: none;
 }
@@ -44,3 +49,51 @@ nav{
     transform: translateX(-50%);
 
 }
+
+.modal-container1 {
+    width: 100vw;
+    position: fixed;
+    top: 30px;
+    display: none;
+    z-index: 999;
+    justify-content: center;
+}
+
+.modal1 {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    background-color: white;
+    border-radius: 10px;
+    width: 50%;
+}
+
+.active {
+    display: flex;
+}
+
+.active .modal1 {
+    animation: modal .4s;
+}
+
+@keyframes modal {
+    from {
+        opacity: 0;
+        transform: translate3d(0, -60px, 0);
+    }
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+span {
+    margin: 10px auto;
+}
+
+ @media (max-width: 500px) {
+    .modal1 {
+        padding: 10px;
+        width: 80%;
+    }
+ }
