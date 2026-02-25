@@ -1,56 +1,165 @@
-@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap'); 
+* { 
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+} 
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-html{
-    font-family: "Montserrat", sans-serif;
+html { 
+    font-family: "Montserrat", sans-serif; 
     font-weight: 400;
-}
+    overflow-x: hidden; 
+} 
 
-body{
-    background-color: #F5ECC2;
-    color: #5D3813;
-}
+body { 
+    background-color: #F5ECC2; 
+    color: #5D3813; 
+} 
 
-a{
-    text-decoration: none;
-    color: #F5ECC2;
-}
+a { 
+    text-decoration: none; 
+    color: #F5ECC2; 
+} 
 
-.botao{
-    text-decoration: none;
-    color: #5D3813;
-}
+ /* Tela Inicial */ 
 
-ul{
-    list-style: none;
-}
-
-nav{
-    background-color: #457D43;
-    display: flex;
-    align-items: center;
+#tela_inicial { 
     position: relative; 
-    padding: 0 2rem;
-
+    height: 80vh; 
+    background-image: linear-gradient(to bottom, rgba(69,125,67,0.9) 0%, rgba(69,125,67,0.4) 40%, rgba(69,125,67,0) 100%), url("../img/Tela inicial.png"); 
+    background-size: cover;
+    height: 90vh;
+    background-position: center; 
+    background-repeat: no-repeat; 
 }
 
-.menu{
-    font-size: 24px;
-    display: flex;
-    flex-direction: row;
-    gap: 7.3rem;
+h1 { 
+    position: absolute; 
+    left: 5vw; 
+    top: 20vh; 
+    z-index: 1; 
+    color: #F5ECC2; 
+    text-shadow: 0 2px 10px #5D3813; 
+    font-weight: 600; 
+    font-family: "Lora", sans-serif; 
+    font-size: 48px; 
+    letter-spacing: 6%; 
+} 
+
+h2 { 
+    position: absolute; 
+    left: 5vw; 
+    top: 40vh; 
+    z-index: 1;
+    color: #F5ECC2; 
+    text-shadow: 0 2px 10px #5D3813; 
+    font-weight: 300; 
+    font-family: "Lora", sans-serif; 
+    font-size: 48px; 
+} 
+    
+.botao{ 
+    position: absolute; 
+    left: 5vw; 
+    top: 60vh; 
+    text-decoration: none; 
+    background-color: #F5ECC2; 
+    border-radius: 15px; 
+    color: #5D3813; 
+    font-size: 30px; 
+    font-weight: 500; 
+    padding: 10px 20px; 
+    z-index: 1; 
+    letter-spacing: 13%; 
+} 
+
+ul{ 
+    list-style: none; 
+} 
+
+nav{ 
+    background-color: #457D43; 
+    display: flex; 
+    align-items: center; 
+    position: relative; 
+    padding: 0 2rem; 
+}
+
+nav img{
+    width: 4.5rem;
+    height: auto;
+}
+ 
+.menu{ 
+    font-size: 24px; 
+    display: flex; 
+    flex-direction: row; 
+    gap: 7.3rem; 
+    position: absolute; 
+    left: 50%; 
+    transform: translateX(-50%); 
+}
+
+
+/* Cardapio Mesa */ 
+.pratos {
+    padding-top: 3vh; 
+    text-align: center; 
+    font-size: 30px; 
+    font-family: "Lora", sans-serif; 
+} 
+
+.imagem_mesa {
+    background-image: url("../img/Mesa.png");
+    opacity: 0.9;
+    background-color: #5D3813;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    padding: 0;
+}
+
+#ImgPrato1 {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 23rem; 
+    cursor: pointer;   
+}
+
+#ImgPrato2 {
     position: absolute;
     left: 50%;
-    transform: translateX(-50%);
-
+    top: 0;
+    width: 26rem;
+    cursor: pointer;    
 }
 
-/* Começo do Modal */
+#ImgPrato3 {
+    position: absolute;
+    left: 25%;
+    bottom: 0;
+    width: 26rem;  
+    cursor: pointer;   
+}
+
+#ImgPrato4 {
+    position: absolute;
+    left: 75%;
+    bottom: 0;
+    width: 26rem;
+    cursor: pointer; 
+}
+
+.instrucao { 
+    text-align: center; 
+    padding-bottom: 3vh; 
+}
+
+/* Modal */
 
 .modal-container1, .modal-container2, .modal-container3,.modal-container4 {
     width: 100vw;
@@ -65,9 +174,30 @@ nav{
     display: flex;
     flex-direction: column;
     padding: 30px;
-    background-color: white;
+    background-color: #457D43; 
+    color: #F5ECC2;
     border-radius: 10px;
     width: 50%;
+}
+
+#prato_modal {
+    height: 10vh;
+    width: 10vh;
+}
+
+.prato_titulo {
+    padding-top: 3vh;  
+    font-weight: 600;
+    font-size: 30px; 
+    font-family: "Lora", sans-serif; 
+}
+
+.prato_descricao {
+    font-weight: 400;
+}
+
+.prato_preco {
+
 }
 
 .active {
@@ -99,10 +229,56 @@ span {
         width: 80%;
     }
  }
- /* Fim do Modal */
 
+ .btnclose {
+    position: absolute; /* se estiver dentro de modal */
+    top: 10px;
+    right: 10px;
+
+    background-color: #457D43;
+    color: #F5ECC2;
+
+    width: 35px;
+    height: 35px;
+
+    border: none;
+    border-radius: 50%;
+
+    font-size: 18px;
+    font-weight: bold;
+
+    cursor: pointer;
+    transition: 0.3s ease;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+
+/* Localização */
+
+#local { 
+    background-color: #5D3813; 
+    align-items: center; 
+    width: 100%; 
+    height: 60vh; 
+}
+ 
+.localizacao { 
+    padding-top: 20px; 
+    color: #F5ECC2; 
+    text-align: center; 
+    font-family: "Lora", sans-serif; 
+    font-size: 30px; 
+} 
+
+iframe { 
+    min-width: 99vw; 
+    min-height: 45vh; 
+    height: auto; 
+}
+ 
  /* Saiba Mais */
-
 #titulo_saibam {
     padding-top: 4vh;
     height: 14vh;
@@ -115,6 +291,7 @@ span {
     background-color: #457D43;
     color: whitesmoke;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     padding: 40px 20px;
     gap: 20px;
@@ -123,10 +300,15 @@ span {
 .coluna_saibam {
     flex: 1; /* Faz as 3 colunas dividirem o espaço igualmente */
     max-width: 300px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-direction: column;
 }
 
 .saibam {
     font-weight: bold;
+    font-size: 1.3rem;
     display: flex;
     align-items: center;
     gap: 8px; /* Espaço entre o ícone e o texto */
@@ -136,4 +318,55 @@ span {
 .resposta_saibam {
     font-weight: 100;
     line-height: 1.5;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
 }
+
+ /* Footer */ 
+ footer { 
+    background-color: #5D3813; 
+    height: 20vh; 
+    color: #f5ecc2; 
+    position: relative;
+    overflow: hidden;
+}
+
+ footer, p { 
+    font-family: "Lora", sans-serif; 
+    font-weight: 100; 
+} 
+
+ .direitos { 
+    padding-top: 5vh; 
+    left: 0; 
+    bottom: 0; 
+    text-align: center; 
+    margin-top: 1.6rem;
+    
+} 
+
+ i { 
+    font-size: 2.5rem;
+    margin-top: 1.3rem;
+    margin-left: 1rem; 
+    margin-right: 15px; 
+    color: #f5ecc2;
+    transition: 0.3s ease;
+    cursor: pointer; 
+} 
+
+i:hover {
+    color: #f3e4a2;
+}
+
+ #imgfooter { 
+    position: absolute;
+    width: 9rem;
+    height: auto;
+    right: 3.120px;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: 0;
+    padding: 0;
+    
+}  
