@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Restaurante de Campo</title>
+    <title>Sabores do Campo</title>
     <meta name="description" content="Aqui você encontra os melhores pratos tradicionais para toda a família">
     <link rel="stylesheet" href="../style/incio.css">
     <link rel="shortcut icon" href="../img/icon-sabores.aba.png" type="image/x-icon">
@@ -12,7 +12,7 @@
 <body>
     <header>
         <nav>
-            <img src="../img/icon-sabores.aba.png" alt="Logo Sabores do campo">
+            <img src="../img/logo-bege footer(1).png" alt="Logo Sabores do campo">
             <ul class="menu">
                 <li><a href="#tela_inicial">Início</a></li>
                 <li><a href="#menu">Pratos</a></li>
@@ -39,10 +39,13 @@
             <img src="../img/AlcatraMesa.png" onclick="openModal1()" alt="Bife Alcatra" id="ImgPrato1"> 
                 <div class="modal-container1">
                     <div class="modal1">
-                        <button class="btnclose" class="btnclose" onclick="closeModal1()">
+                        <button class="btnclose" onclick="closeModal1()">
+                            <i class="fa-solid fa-xmark"></i>
+                        </button>
                         <p class="prato_titulo">Alcatra da Roça</p>
                         <img src="../img/Alcatra.png" alt="Bife Alcatra" id="prato_modal">
                         <span class="prato_descricao">Bife de alcatra selecionado, grelhado na chapa com manteiga da fazenda. Acompanha arroz soltinho e feijão tropeiro.</span>
+                       <p class="prato_preco">R$30,00</p> 
                     </div>
                 </div>
             <!-- FIM -->
@@ -50,10 +53,13 @@
             <img src="../img/CarnePanelaMesa.png" onclick="openModal2()" alt="Carne Panela" id="ImgPrato2">
                 <div class="modal-container2">
                     <div class="modal2">
-                        <button class="btnclose" onclick="closeModal2()">x</button>
+                        <button class="btnclose" onclick="closeModal2()">
+                            <i class="fa-solid fa-xmark"></i>
+                        </button>
                         <p class="prato_titulo">Carne de Panela da Vovó</p>
                         <img src="../img/CarnePanela.png" alt="Carne Panela" id="prato_modal">
                         <span class="prato_descricao" >Carne cozida no fogão à lenha, temperada com ervas da horta, além das batatas macias e fresquinhas, imersas em um delicioso caldo. Acompanha arroz soltinho.</span>
+                        <p class="prato_preco">R$30,00</p>
                     </div>
                 </div>
             <!-- FIM -->
@@ -61,10 +67,13 @@
             <img src="../img/FrangoCaipiraMesa.png" onclick="openModal3()" alt="Frango Caipira" id="ImgPrato3">
                 <div class="modal-container3">
                     <div class="modal3">
-                        <button class="btnclose" onclick="closeModal3()">x</button>
+                        <button class="btnclose" onclick="closeModal3()">
+                            <i class="fa-solid fa-xmark"></i>
+                        </button>
                         <p class="prato_titulo">Frango Caipira da Casa</p>
                         <img src="../img/FrangoCaipira.png" alt="Frango Caipira" id="prato_modal">
                         <span class="prato_descricao">Frango selado com temperos naturais cozidos junto a legumes frescos e caldo. Acompanha farinha de mandioca e arroz branco.</span>
+                        <p class="prato_preco">R$30,00</p>
                     </div>
                 </div>
             <!-- FIM -->
@@ -72,10 +81,13 @@
             <img src="../img/FeijoadaMesa.png" onclick="openModal4()" alt="Feijoada" id="ImgPrato4">
                 <div class="modal-container4">
                     <div class="modal4">
-                        <button class="btnclose" onclick="closeModal4()">x</button>
+                        <button class="btnclose" onclick="closeModal4()">
+                            <i class="fa-solid fa-xmark"></i>
+                        </button>
                         <p class="prato_titulo">Feijoada da Fazenda</p>
                         <img src="../img/Feijoada.png" alt="Frango Caipira" id="prato_modal">
                         <span class="prato_descricao">Feijão preto cozido, com cortes suínos selecionados, acompanhados por arroz branco, couve refogada, farofa crocante e rodelas de laranja</span>
+                        <p class="prato_preco">R$30,00</p>
                     </div>
                 </div>
                 </div>
@@ -97,7 +109,7 @@
             <div class="coluna_saibam">
                 <div class="saibam">
                     <img src="../img/Home.png" alt="">
-                    <p> Quem Somos? </p>
+                    <strong> Quem Somos? </strong>
                 </div>
                     <p class="resposta_saibam">
                         Ágatha de Souza, Kalel Fernandes, Kauan Santos e Nathan Santos
@@ -107,7 +119,7 @@
             <div class="coluna_saibam">
                 <div class="saibam">
                     <img src="../img/Lock.png" alt="">
-                    <p> O que buscamos? </p>
+                    <p id="pergunta_saibam"> O que buscamos? </strong>
                 </div>
                     <p class="resposta_saibam">
                         Nossa missão é oferecer uma experiência gastronômica autêntica, unindo o frescor dos ingredientes da fazenda com o acolhimento de um lugar feito para fugir da rotina.
@@ -117,7 +129,7 @@
             <div class="coluna_saibam">
                 <div class="saibam">
                     <img src="../img/Clock.png" alt="">
-                    <p> Horários </p>
+                    <strong> Horários </strong>
                 </div>
                     <p class="resposta_saibam">
                         Seg a Sex: 11h às 16h<br>
@@ -128,19 +140,19 @@
     </main>
     <footer>
         <a href="https://www.facebook.com/?locale=pt_BR">
-            <i class="fa-brands fa-facebook"></i>
+            <i id="facebook" class="fa-brands fa-facebook"></i>
         </a>
         <a href="https://br.linkedin.com/?mcid=6821526239111716925&src=go-pa&trk=sem-ga_campid.12619604099_asid.149519181115_crid.725790844702_kw.linkedin_d.c_tid.kwd-148086543_n.g_mt.e_geo.9198647&cid=&gclsrc=aw.ds&gad_source=1&gad_campaignid=12619604099&gbraid=0AAAAABhL5JODIw-m76xdyelTcwOZpXoQI&gclid=CjwKCAiA2PrMBhA4EiwAwpHyC0rBQEpiBqL3z0CHlMOEKUKlZooS79kEEI6GPj449qSXb4r_PVLhHhoCQXEQAvD_BwE"> 
-            <i class="fa-brands fa-linkedin" target="_blank"></i>
+            <i id="linkedin" class="fa-brands fa-linkedin" target="_blank"></i>
         </a> 
         <a href="https://www.youtube.com/" target="_blank">
-            <i class="fa-brands fa-youtube"></i>
+            <i id="youtube" class="fa-brands fa-youtube"></i>
         </a>
         <a href="https://www.instagram.com/" target="_blank"> 
-            <i class="fa-brands fa-instagram"></i>
+            <i id="instagram" class="fa-brands fa-instagram"></i>
         </a>
         <a href="https://web.whatsapp.com/" target="_blank">
-            <i class="fa-brands fa-whatsapp"></i>
+            <i id="whatsapp" class="fa-brands fa-whatsapp"></i>
         </a> 
          <img id="imgfooter" src="../img/logo-bege footer(1).png" target="_blank" alt="Logo Sabores do campo"> 
          <p class="direitos">© 2024 Sabores do Campo - Todos os direitos reservados.</p> 

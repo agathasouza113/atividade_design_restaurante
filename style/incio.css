@@ -21,12 +21,16 @@ a {
     color: #F5ECC2; 
 } 
 
+a:hover{
+    color: #c29262;
+}
+
  /* Tela Inicial */ 
 
 #tela_inicial { 
     position: relative; 
     height: 80vh; 
-    background-image: linear-gradient(to bottom, rgba(69,125,67,0.9) 0%, rgba(69,125,67,0.4) 40%, rgba(69,125,67,0) 100%), url("../img/Tela inicial.png"); 
+    background-image: linear-gradient(to bottom, rgba(69,125,67,1   ) 0%, rgba(69,125,67,0.4) 50%, rgba(69,125,67,0) 100%), url("../img/Tela inicial.png"); 
     background-size: cover;
     height: 90vh;
     background-position: center; 
@@ -70,11 +74,13 @@ h2 {
     font-weight: 500; 
     padding: 10px 20px; 
     z-index: 1; 
-    letter-spacing: 13%; 
+    letter-spacing: 13%;
+    transition: 0.5s;
 } 
 
 ul{ 
     list-style: none; 
+    
 } 
 
 nav{ 
@@ -103,15 +109,16 @@ nav img{
 
 /* Cardapio Mesa */ 
 .pratos {
-    padding-top: 3vh; 
+    padding-top: 2vh; 
+    padding-bottom: 2vh;
     text-align: center; 
-    font-size: 30px; 
+    font-size: 2rem; 
     font-family: "Lora", sans-serif; 
 } 
 
 .imagem_mesa {
     background-image: url("../img/Mesa.png");
-    opacity: 0.9;
+    /* opacity: 0.9; */
     background-color: #5D3813;
     background-size: cover;
     background-position: center;
@@ -173,7 +180,7 @@ nav img{
 .modal1, .modal2, .modal3, .modal4 {
     display: flex;
     flex-direction: column;
-    padding: 30px;
+    padding: 20px;
     background-color: #457D43; 
     color: #F5ECC2;
     border-radius: 10px;
@@ -183,21 +190,27 @@ nav img{
 #prato_modal {
     height: 10vh;
     width: 10vh;
+    position: a;
+    right: 20px;
 }
 
 .prato_titulo {
     padding-top: 3vh;  
     font-weight: 600;
-    font-size: 30px; 
+    font-size: 35px; 
     font-family: "Lora", sans-serif; 
 }
 
 .prato_descricao {
-    font-weight: 400;
+    font-weight: 600;
 }
 
 .prato_preco {
-
+    padding-top: 3vh;  
+    font-weight: 600;
+    font-size: 45px; 
+    font-family: "Lora", sans-serif;
+    text-shadow: -1px 2px 1px #000000; 
 }
 
 .active {
@@ -231,29 +244,23 @@ span {
  }
 
  .btnclose {
-    position: absolute; /* se estiver dentro de modal */
-    top: 10px;
-    right: 10px;
-
-    background-color: #457D43;
+    width: 30px;
+    height: 30px;
+    padding: 0;
+    margin: 0;
+    font-size: 1.3rem;
+    background-color: transparent;
+    border-width: 3px;
+    border-color: #F5ECC2;
+    border-style: solid;
+    border-radius: 100%;
     color: #F5ECC2;
-
-    width: 35px;
-    height: 35px;
-
-    border: none;
-    border-radius: 50%;
-
-    font-size: 18px;
-    font-weight: bold;
-
     cursor: pointer;
-    transition: 0.3s ease;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
  }
+
+ /* #cancel {
+    font-size: 1.5rem;
+ } */
 
 /* Localização */
 
@@ -279,12 +286,13 @@ iframe {
 }
  
  /* Saiba Mais */
+ 
 #titulo_saibam {
-    padding-top: 4vh;
-    height: 14vh;
-    text-align: center;
-    font-size: 30px;
-    font-family: "Lora", sans-serif;
+    padding-top: 2vh; 
+    padding-bottom: 2vh;
+    text-align: center; 
+    font-size: 2rem; 
+    font-family: "Lora", sans-serif; 
 }
 
 #saiba_mais {
@@ -298,7 +306,7 @@ iframe {
 }
 
 .coluna_saibam {
-    flex: 1; /* Faz as 3 colunas dividirem o espaço igualmente */
+    flex: 1; 
     max-width: 300px;
     display: flex;
     align-items: center;
@@ -307,11 +315,10 @@ iframe {
 }
 
 .saibam {
-    font-weight: bold;
-    font-size: 1.3rem;
     display: flex;
+    font-size: 1.3rem;
     align-items: center;
-    gap: 8px; /* Espaço entre o ícone e o texto */
+    gap: 8px;
     margin-bottom: 10px;
 }
 
@@ -345,7 +352,7 @@ iframe {
     
 } 
 
- i { 
+ #facebook, #linkedin, #youtube, #instagram, #whatsapp { 
     font-size: 2.5rem;
     margin-top: 1.3rem;
     margin-left: 1rem; 
@@ -355,7 +362,7 @@ iframe {
     cursor: pointer; 
 } 
 
-i:hover {
+#facebook:hover, #linkedin:hover:hover, #youtube:hover, #instagram:hover, #whatsapp:hover {
     color: #f3e4a2;
 }
 
