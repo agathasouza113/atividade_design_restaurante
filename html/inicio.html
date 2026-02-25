@@ -45,6 +45,7 @@
                         <p class="prato_titulo">Alcatra da Roça</p>
                         <img src="../img/Alcatra.png" alt="Bife Alcatra" id="prato_modal">
                         <span class="prato_descricao">Bife de alcatra selecionado, grelhado na chapa com manteiga da fazenda. Acompanha arroz soltinho e feijão tropeiro.</span>
+                        <img src="../img/logo-bege footer(1).png" alt="" class="logo-modal1">
                        <p class="prato_preco">R$30,00</p> 
                     </div>
                 </div>
@@ -56,9 +57,10 @@
                         <button class="btnclose" onclick="closeModal2()">
                             <i class="fa-solid fa-xmark"></i>
                         </button>
-                        <p class="prato_titulo">Carne de Panela da Vovó</p>
+                        <p class="prato_titulo">Carne de Panela <br> da Vovó</p>
                         <img src="../img/CarnePanela.png" alt="Carne Panela" id="prato_modal">
                         <span class="prato_descricao" >Carne cozida no fogão à lenha, temperada com ervas da horta, além das batatas macias e fresquinhas, imersas em um delicioso caldo. Acompanha arroz soltinho.</span>
+                        <img src="../img/logo-bege footer(1).png" alt="" class="logo-modal2">
                         <p class="prato_preco">R$30,00</p>
                     </div>
                 </div>
@@ -70,9 +72,10 @@
                         <button class="btnclose" onclick="closeModal3()">
                             <i class="fa-solid fa-xmark"></i>
                         </button>
-                        <p class="prato_titulo">Frango Caipira da Casa</p>
+                        <p class="prato_titulo">Frango Caipira <br> da Casa</p>
                         <img src="../img/FrangoCaipira.png" alt="Frango Caipira" id="prato_modal">
                         <span class="prato_descricao">Frango selado com temperos naturais cozidos junto a legumes frescos e caldo. Acompanha farinha de mandioca e arroz branco.</span>
+                        <img src="../img/logo-bege footer(1).png" alt="" class="logo-modal3">
                         <p class="prato_preco">R$30,00</p>
                     </div>
                 </div>
@@ -84,12 +87,12 @@
                         <button class="btnclose" onclick="closeModal4()">
                             <i class="fa-solid fa-xmark"></i>
                         </button>
-                        <p class="prato_titulo">Feijoada da Fazenda</p>
+                        <p class="prato_titulo">Feijoada da <br> Fazenda</p>
                         <img src="../img/Feijoada.png" alt="Frango Caipira" id="prato_modal">
                         <span class="prato_descricao">Feijão preto cozido, com cortes suínos selecionados, acompanhados por arroz branco, couve refogada, farofa crocante e rodelas de laranja</span>
+                        <img src="../img/logo-bege footer(1).png" alt="" class="logo-modal4">
                         <p class="prato_preco">R$30,00</p>
                     </div>
-                </div>
                 </div>
             <!-- FIM -->
             <!-- Final dos Pop ups -->
@@ -109,7 +112,7 @@
             <div class="coluna_saibam">
                 <div class="saibam">
                     <img src="../img/Home.png" alt="">
-                    <strong> Quem Somos? </strong>
+                    <p id="pergunta_saibam"> Quem Somos? </p>
                 </div>
                     <p class="resposta_saibam">
                         Ágatha de Souza, Kalel Fernandes, Kauan Santos e Nathan Santos
@@ -119,7 +122,7 @@
             <div class="coluna_saibam">
                 <div class="saibam">
                     <img src="../img/Lock.png" alt="">
-                    <p id="pergunta_saibam"> O que buscamos? </strong>
+                    <p id="pergunta_saibam"> O que buscamos? </p>
                 </div>
                     <p class="resposta_saibam">
                         Nossa missão é oferecer uma experiência gastronômica autêntica, unindo o frescor dos ingredientes da fazenda com o acolhimento de um lugar feito para fugir da rotina.
@@ -129,7 +132,7 @@
             <div class="coluna_saibam">
                 <div class="saibam">
                     <img src="../img/Clock.png" alt="">
-                    <strong> Horários </strong>
+                    <p id="pergunta_saibam"> Horários </p>
                 </div>
                     <p class="resposta_saibam">
                         Seg a Sex: 11h às 16h<br>
@@ -158,6 +161,7 @@
          <p class="direitos">© 2024 Sabores do Campo - Todos os direitos reservados.</p> 
     </footer>
 
+    <div class="overlay" id="overlay" onclick="closeAllModals()"></div>
 <script src="../scripts/incio.js"></script>
 </body>
 </html>
