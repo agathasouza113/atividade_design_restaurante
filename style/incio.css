@@ -23,6 +23,7 @@ a {
 
 a:hover{
     color: #c29262;
+    transition: 0.3s ease-in-out;
 }
 
  /* Tela Inicial */ 
