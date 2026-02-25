@@ -50,6 +50,8 @@ nav{
 
 }
 
+/* Começo do Modal */
+
 .modal-container1, .modal-container2, .modal-container3,.modal-container4 {
     width: 100vw;
     position: fixed;
@@ -97,3 +99,41 @@ span {
         width: 80%;
     }
  }
+ /* Fim do Modal */
+
+ /* Saiba Mais */
+
+#titulo_saibam {
+    padding-top: 4vh;
+    height: 14vh;
+    text-align: center;
+    font-size: 30px;
+    font-family: "Lora", sans-serif;
+}
+
+#saiba_mais {
+    background-color: #457D43;
+    color: whitesmoke;
+    display: flex;
+    justify-content: space-around;
+    padding: 40px 20px;
+    gap: 20px;
+}
+
+.coluna_saibam {
+    flex: 1; /* Faz as 3 colunas dividirem o espaço igualmente */
+    max-width: 300px;
+}
+
+.saibam {
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 8px; /* Espaço entre o ícone e o texto */
+    margin-bottom: 10px;
+}
+
+.resposta_saibam {
+    font-weight: 100;
+    line-height: 1.5;
+}
