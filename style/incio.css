@@ -9,6 +9,7 @@ html {
     font-family: "Montserrat", sans-serif; 
     font-weight: 400;
     overflow-x: hidden; 
+    scroll-behavior: auto;
 } 
 
 body { 
@@ -356,7 +357,7 @@ iframe {
 
 #saiba_mais {
     background-color: #457D43;
-    color: whitesmoke;
+    color: #F5ECC2;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
